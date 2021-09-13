@@ -1,0 +1,25 @@
+Container(
+      padding: const EdgeInsets.all(2),
+      child: Stack(
+        children: [
+          Image.asset(
+            img,
+            fit: BoxFit.fill,
+          ),
+        ],
+      ),
+    );
+
+    MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: Home(),
+          theme: ThemeData(
+            primaryColor: Colors.deepPurple,
+            brightness: Brightness.light,
+          ),
+          darkTheme: ThemeData(
+            primaryColor: Colors.deepPurpleAccent,
+            brightness: Brightness.dark,
+          ),
+          themeMode: ThemeMode.light,
+        );
